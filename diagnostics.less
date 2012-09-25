@@ -157,20 +157,21 @@
 	position: fixed;
 	bottom: 7px;
 	left: 7px;
+	z-index: 10000;
 	color: rgba(0, 0, 0, 0.6);
 	font-weight: bold;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	background-color: rgba(220, 220, 220, 0.7);
 }
 /*
- * RETINA � output "@2x"
+ * RETINA - output "@2x"
  */
 @media screen and (-webkit-min-device-pixel-ratio: 2)
 {
 	.retina:before { content: "@2x - "; }
 }
 /*
- * QUERY � output media query
+ * QUERY - output media query
  */
 /* mobile portrait */
 @media only screen and (min-width: 320px)
@@ -223,7 +224,7 @@
 	.q-box:after { content: "min-width: 1400px"; }
 }
 /* 
- * DEVICE NAMES � output current device for which query applies
+ * DEVICE NAMES - output current device for which query applies
  */
 @media only screen and (min-width: 320px)
 {
@@ -247,7 +248,7 @@
 /* Bootstrap - landscape tablet / netbook / laptop */
 @media only screen and (min-width: 980px)
 {
-	.q-box.device:after { content: "Tablet - Landscape (Bootstrap)"; }
+	.q-box.device:after { content: "Kindle Fire - Landscape"; } // (Bootstrap)
 }
 /* landscape tablet / netbook / laptop */
 @media only screen and (min-width: 1024px)
@@ -262,7 +263,7 @@
 /* Bootstrap - desktop */
 @media only screen and (min-width: 1200px)
 {
-	.q-box.deviceafter { content: "Desktop (Bootstrap)"; }
+	.q-box.device:after { content: "Desktop"; }// (Bootstrap)
 }
 /* desktop */
 @media only screen and (min-width: 1280px)
@@ -275,7 +276,69 @@
 	.q-box.device:after { content: "Widescreen"; }
 }
 /* 
- * ENGLISH � output the actual query in plain english
+ * DEVICE SIZE - output the dimensions of the device/query for which query applies
+ */
+@media only screen and (min-width: 320px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (320px)"; }
+	.q-box:after { float: left; }
+}
+/* mobile landscape */
+@media only screen and (min-width: 480px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (480px)"; }
+	.q-box:after { float: left; }
+}
+/* small tablet */
+@media only screen and (min-width: 600px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (600px)"; }
+	.q-box:after { float: left; }
+}
+/* tablet / netbook */
+@media only screen and (min-width: 768px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (768px)"; }
+	.q-box:after { float: left; }
+}
+/* Bootstrap - landscape tablet / netbook / laptop */
+@media only screen and (min-width: 980px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (980px)"; }
+	.q-box:after { float: left; }
+}
+/* landscape tablet / netbook / laptop */
+@media only screen and (min-width: 1024px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (1024px)"; }
+	.q-box:after { float: left; }
+}
+/* HDTV */
+@media only screen and (min-width: 1080px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (1080px)"; }
+	.q-box:after { float: left; }
+}
+/* Bootstrap - desktop */
+@media only screen and (min-width: 1200px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (1200px)"; }
+	.q-box:after { float: left; }
+}
+/* desktop */
+@media only screen and (min-width: 1280px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (1280px)"; }
+	.q-box:after { float: left; }
+}
+/* widescreen */
+@media only screen and (min-width: 1400px)
+{
+	.q-box.size:before { margin-left: 0.5em; content: " (1400px)"; }
+	.q-box:after { float: left; }
+}
+/*
+ * ENGLISH - output the actual query in plain english
  */
 @media only screen and (min-width: 320px)
 {
@@ -284,7 +347,7 @@
 /* mobile landscape */
 @media only screen and (min-width: 480px)
 {
-	.q-box.english:after { content: "iPhone Landscape and wider (640px)"; }
+	.q-box.english:after { content: "iPhone Landscape and wider (480px)"; }
 }
 /* small tablet */
 @media only screen and (min-width: 600px)
@@ -299,7 +362,7 @@
 /* Bootstrap - landscape tablet / netbook / laptop */
 @media only screen and (min-width: 980px)
 {
-	.q-box.english:after { content: "Tablet Landscape and wider (980px - Bootstrap)"; }
+	.q-box.english:after { content: "Kindle Fire Landscape and wider (980px - Bootstrap)"; }
 }
 /* landscape tablet / netbook / laptop */
 @media only screen and (min-width: 1024px)
@@ -327,7 +390,7 @@
 	.q-box.english:after { content: "Widescreen computer and wider (1400px)"; }
 }
 /* 
- * SHOW WIDTH � resize q-box to visually indicate breakpoint
+ * SHOW WIDTH - resize q-box to visually indicate breakpoint
  */
 .show-width
 {
