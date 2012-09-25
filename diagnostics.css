@@ -21,13 +21,6 @@
 .bg-r-l {
   background-color: rgba(220, 20, 60, 0.05) !important;
 }
-.works {
-  border: solid 1px rgba(220, 20, 60, 0.4);
-  background-color: rgba(220, 20, 60, 0.1);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 /*============ BORDERS ============*/
 .b {
   border: solid 1px rgba(0, 0, 0, 0.3);
@@ -36,7 +29,7 @@
   border: solid 1px rgba(30, 144, 255, 0.6);
 }
 .b-r {
-  border: solid 1px rgba(220, 20, 60, 0.5);
+  border: solid 1px rgba(220, 20, 60, 0.4);
 }
 .b.dash,
 .b-b.dash,
@@ -86,6 +79,14 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/*============= OTHER ==============*/
+.works {
+  border: solid 1px rgba(220, 20, 60, 0.4);
+  background-color: rgba(220, 20, 60, 0.1) !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*========= MEDIA QUERIES =========*/
 .q-box {
   padding: 2px 7px 3px;
@@ -102,17 +103,11 @@
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   background-color: rgba(220, 220, 220, 0.7);
 }
-/*
- * RETINA - output "@2x"
- */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   .retina:before {
     content: "@2x - ";
   }
 }
-/*
- * QUERY - output media query
- */
 @media only screen and (min-width: 320px) {
   .q-box:after {
     content: "min-width: 320px";
@@ -163,9 +158,6 @@
     content: "min-width: 1400px";
   }
 }
-/*
- * DEVICE NAMES - output current device for which query applies
- */
 @media only screen and (min-width: 320px) {
   .q-box.device:after {
     content: "iPhone - Portrait";
@@ -216,9 +208,6 @@
     content: "Widescreen";
   }
 }
-/*
- * DEVICE SIZE - output the dimensions of the device/query for which query applies
- */
 @media only screen and (min-width: 320px) {
   .q-box.size:before {
     margin-left: 0.5em;
@@ -309,9 +298,6 @@
     float: left;
   }
 }
-/*
- * ENGLISH - output the actual query in plain english
- */
 @media only screen and (min-width: 320px) {
   .q-box.english:after {
     content: "iPhone Portrait and wider (320px)";
@@ -362,9 +348,6 @@
     content: "Widescreen computer and wider (1400px)";
   }
 }
-/*
- * SHOW WIDTH - resize q-box to visually indicate breakpoint
- */
 .show-width {
   border: solid 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 2px;
