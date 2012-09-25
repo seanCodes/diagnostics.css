@@ -5,20 +5,25 @@
  * and diagnosing by Sean Juarez
  *
  */
-/*============== ALL ==============*/
-.b-all * {
-  border: solid 1px rgba(0, 0, 0, 0.3);
-}
-.bg-all * {
+/*========== BACKGROUNDS ==========*/
+.bg {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.box-all * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.bg-b {
+  background-color: rgba(30, 144, 255, 0.15);
 }
-/*=========== BOX-SIZING ===========*/
-.box {
+.bg-b-l {
+  background-color: rgba(30, 144, 255, 0.07);
+}
+.bg-r {
+  background-color: rgba(220, 20, 60, 0.1) !important;
+}
+.bg-r-l {
+  background-color: rgba(220, 20, 60, 0.05) !important;
+}
+.works {
+  border: solid 1px rgba(220, 20, 60, 0.4);
+  background-color: rgba(220, 20, 60, 0.1);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -63,25 +68,20 @@
 .o-r.dot {
   outline-style: dotted;
 }
-/*========== BACKGROUNDS ==========*/
-.bg {
+/*=========== BOX-SIZING ===========*/
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*============== ALL ==============*/
+.b-all * {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+}
+.bg-all * {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.bg-b {
-  background-color: rgba(30, 144, 255, 0.15);
-}
-.bg-b-l {
-  background-color: rgba(30, 144, 255, 0.07);
-}
-.bg-r {
-  background-color: rgba(220, 20, 60, 0.1) !important;
-}
-.bg-r-l {
-  background-color: rgba(220, 20, 60, 0.05) !important;
-}
-.works {
-  border: solid 1px rgba(220, 20, 60, 0.4);
-  background-color: rgba(220, 20, 60, 0.1);
+.box-all * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
