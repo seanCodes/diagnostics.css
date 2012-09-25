@@ -10,25 +10,26 @@
 
 /*============== ALL ==============*/
 
-/* BORDER on all child elements */
+// Apply to all child elements
+
+// Border
 .b-all *
 {
 	border: solid 1px rgba(0,0,0,0.3);
 }
-
-/* BACKGROUND on all child elements */
+// Background
 .bg-all *
 {
 	background-color: rgba(0,0,0,0.05);
 }
-
-/* BOX-SIZING on all child elements */
+// Box-sizing
 .box-all *
 {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
 
 
 /*=========== BOX-SIZING ===========*/
@@ -43,29 +44,29 @@
 
 /*============ BORDERS ============*/
 
-/* gray */
+// gray
 .b
 {
 	border: solid 1px rgba(0,0,0,0.3);
 }
-/* blue */
+// blue
 .b-b
 {
 	border: solid 1px rgba(30,144,255,0.6);
 }
-/* red */
+// red
 .b-r
 {
 	border: solid 1px rgba(220,20,60,0.5);
 }
-/* dashed */
+// dashed
 .b.dash,
 .b-b.dash,
 .b-r.dash
 {
 	border-style: dashed;
 }
-/* dotted */
+// dotted
 .b.dot,
 .b-b.dot,
 .b-r.dot
@@ -76,29 +77,29 @@
 
 /*============ OUTLINES ============*/
 
-/* gray */
+// gray
 .o
 {
 	outline: solid 1px rgba(0,0,0,0.3);
 }
-/* blue */
+// blue
 .o-b
 {
 	outline: solid 1px rgba(30,144,255,0.6);
 }
-/* red */
+// red
 .o-r
 {
 	outline: solid 1px rgba(220,20,60,0.5);
 }
-/* dashed */
+// dashed
 .o.dash,
 .o-b.dash,
 .o-r.dash
 {
 	outline-style: dashed;
 }
-/* dotted */
+// dotted
 .o.dot,
 .o-b.dot,
 .o-r.dot
@@ -109,32 +110,32 @@
 
 /*========== BACKGROUNDS ==========*/
 
-/* gray */
+// gray
 .bg	
 {
 	background-color: rgba(0,0,0,0.05);
 }
-/* blue */
+// blue
 .bg-b	
 {
 	background-color: rgba(30,144,255,0.15);
 }
-/* light blue */
+// light blue
 .bg-b-l
 {
 	background-color: rgba(30,144,255,0.07);
 }
-/* red */
+// red
 .bg-r	
 {
 	background-color: rgba(220,20,60,0.1) !important;
 }
-/* light red */
+// light red
 .bg-r-l
 {
 	background-color: rgba(220,20,60,0.05) !important;
 }
-/* border-red; bg-red; box */
+// border-red; bg-red; box
 .works
 {
 	border: solid 1px rgba(220,20,60,0.4);
@@ -173,109 +174,109 @@
 /*
  * QUERY - output media query
  */
-/* mobile portrait */
+// mobile portrait
 @media only screen and (min-width: 320px)
 {
 	.q-box:after { content: "min-width: 320px"; }
 }
-/* mobile landscape */
+// mobile landscape
 @media only screen and (min-width: 480px)
 {
 	.q-box:after { content: "min-width: 480px"; }
 }
-/* small tablet */
+// small tablet
 @media only screen and (min-width: 600px)
 {
 	.q-box:after { content: "min-width: 600px"; }
 }
-/* tablet / netbook */
+// tablet / netbook
 @media only screen and (min-width: 768px)
 {
 	.q-box:after { content: "min-width: 768px"; }
 }
-/* Bootstrap - landscape tablet / netbook / laptop */
+// Bootstrap - landscape tablet / netbook / laptop
 @media only screen and (min-width: 980px)
 {
 	.q-box:after { content: "min-width: 980px"; }
 }
-/* landscape tablet / netbook / laptop */
+// landscape tablet / netbook / laptop
 @media only screen and (min-width: 1024px)
 {
 	.q-box:after { content: "min-width: 1024px"; }
 }
-/* HDTV */
+// HDTV
 @media only screen and (min-width: 1080px)
 {
 	.q-box:after { content: "min-width: 1080px"; }
 }
-/* Bootstrap - desktop */
+// Bootstrap - desktop
 @media only screen and (min-width: 1200px)
 {
 	.q-box:after { content: "min-width: 1200px"; }
 }
-/* desktop */
+// desktop
 @media only screen and (min-width: 1280px)
 {
 	.q-box:after { content: "min-width: 1280px"; }
 }
-/* widescreen */
+// widescreen
 @media only screen and (min-width: 1400px)
 { 
 	.q-box:after { content: "min-width: 1400px"; }
 }
-/* 
+/*
  * DEVICE NAMES - output current device for which query applies
  */
 @media only screen and (min-width: 320px)
 {
 	.q-box.device:after { content: "iPhone - Portrait"; }
 }
-/* mobile landscape */
+// mobile landscape
 @media only screen and (min-width: 480px)
 {
 	.q-box.device:after { content: "iPhone - Landscape"; }
 }
-/* small tablet */
+// small tablet
 @media only screen and (min-width: 600px)
 {
 	.q-box.device:after { content: "Kindle Fire - Portrait"; }
 }
-/* tablet / netbook */
+// tablet / netbook
 @media only screen and (min-width: 768px)
 {
 	.q-box.device:after { content: "iPad - Portrait"; }
 }
-/* Bootstrap - landscape tablet / netbook / laptop */
+// Bootstrap - landscape tablet / netbook / laptop
 @media only screen and (min-width: 980px)
 {
 	.q-box.device:after { content: "Kindle Fire - Landscape"; } // (Bootstrap)
 }
-/* landscape tablet / netbook / laptop */
+// landscape tablet / netbook / laptop
 @media only screen and (min-width: 1024px)
 {
 	.q-box.device:after { content: "iPad - Landscape"; }
 }
-/* HDTV */
+// HDTV
 @media only screen and (min-width: 1080px)
 {
 	.q-box.device:after { content: "HDTV"; }
 }
-/* Bootstrap - desktop */
+// Bootstrap - desktop
 @media only screen and (min-width: 1200px)
 {
 	.q-box.device:after { content: "Desktop"; }// (Bootstrap)
 }
-/* desktop */
+// desktop
 @media only screen and (min-width: 1280px)
 {
 	.q-box.device:after { content: "Desktop"; }
 }
-/* widescreen */
+// widescreen
 @media only screen and (min-width: 1400px)
 { 
 	.q-box.device:after { content: "Widescreen"; }
 }
-/* 
+/*
  * DEVICE SIZE - output the dimensions of the device/query for which query applies
  */
 @media only screen and (min-width: 320px)
@@ -283,55 +284,55 @@
 	.q-box.size:before { margin-left: 0.5em; content: " (320px)"; }
 	.q-box:after { float: left; }
 }
-/* mobile landscape */
+// mobile landscape
 @media only screen and (min-width: 480px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (480px)"; }
 	.q-box:after { float: left; }
 }
-/* small tablet */
+// small tablet
 @media only screen and (min-width: 600px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (600px)"; }
 	.q-box:after { float: left; }
 }
-/* tablet / netbook */
+// tablet / netbook
 @media only screen and (min-width: 768px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (768px)"; }
 	.q-box:after { float: left; }
 }
-/* Bootstrap - landscape tablet / netbook / laptop */
+// Bootstrap - landscape tablet / netbook / laptop
 @media only screen and (min-width: 980px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (980px)"; }
 	.q-box:after { float: left; }
 }
-/* landscape tablet / netbook / laptop */
+// landscape tablet / netbook / laptop
 @media only screen and (min-width: 1024px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (1024px)"; }
 	.q-box:after { float: left; }
 }
-/* HDTV */
+// HDTV
 @media only screen and (min-width: 1080px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (1080px)"; }
 	.q-box:after { float: left; }
 }
-/* Bootstrap - desktop */
+// Bootstrap - desktop
 @media only screen and (min-width: 1200px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (1200px)"; }
 	.q-box:after { float: left; }
 }
-/* desktop */
+// desktop
 @media only screen and (min-width: 1280px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (1280px)"; }
 	.q-box:after { float: left; }
 }
-/* widescreen */
+// widescreen
 @media only screen and (min-width: 1400px)
 {
 	.q-box.size:before { margin-left: 0.5em; content: " (1400px)"; }
@@ -344,52 +345,52 @@
 {
 	.q-box.english:after { content: "iPhone Portrait and wider (320px)"; }
 }
-/* mobile landscape */
+// mobile landscape
 @media only screen and (min-width: 480px)
 {
 	.q-box.english:after { content: "iPhone Landscape and wider (480px)"; }
 }
-/* small tablet */
+// small tablet
 @media only screen and (min-width: 600px)
 {
 	.q-box.english:after { content: "Kindle Fire and wider (600px)"; }
 }
-/* tablet / netbook */
+// tablet / netbook
 @media only screen and (min-width: 768px)
 {
 	.q-box.english:after { content: "iPad Portrait and wider (768px)"; }
 }
-/* Bootstrap - landscape tablet / netbook / laptop */
+// Bootstrap - landscape tablet / netbook / laptop
 @media only screen and (min-width: 980px)
 {
 	.q-box.english:after { content: "Kindle Fire Landscape and wider (980px - Bootstrap)"; }
 }
-/* landscape tablet / netbook / laptop */
+// landscape tablet / netbook / laptop
 @media only screen and (min-width: 1024px)
 {
 	.q-box.english:after { content: "iPad Landscape and wider (1024px)"; }
 }
-/* HDTV */
+// HDTV
 @media only screen and (min-width: 1080px)
 {
 	.q-box.english:after { content: "HDTV and wider (1080px)"; }
 }
-/* Bootstrap - desktop */
+// Bootstrap - desktop
 @media only screen and (min-width: 1200px)
 {
 	.q-box.english:after { content: "Desktop computer and wider (1200px - Bootstrap)"; }
 }
-/* desktop */
+// desktop
 @media only screen and (min-width: 1280px)
 {
 	.q-box.english:after { content: "Desktop computer and wider (1280px)"; }
 }
-/* widescreen */
+// widescreen
 @media only screen and (min-width: 1400px)
 { 
 	.q-box.english:after { content: "Widescreen computer and wider (1400px)"; }
 }
-/* 
+/*
  * SHOW WIDTH - resize q-box to visually indicate breakpoint
  */
 .show-width
@@ -407,47 +408,47 @@
 {
 	.show-width { width: 320px; }
 }
-/* mobile landscape */
+// mobile landscape
 @media only screen and (min-width: 480px)
 {
 	.show-width { width: 480px; }
 }
-/* small tablet */
+// small tablet
 @media only screen and (min-width: 600px)
 {
 	.show-width { width: 600px; }
 }
-/* tablet / netbook */
+// tablet / netbook
 @media only screen and (min-width: 768px)
 {
 	.show-width { width: 768px; }
 }
-/* Bootstrap - landscape tablet / netbook / laptop */
+// Bootstrap - landscape tablet / netbook / laptop
 @media only screen and (min-width: 980px)
 {
 	.show-width { width: 980px; }
 }
-/* landscape tablet / netbook / laptop */
+// landscape tablet / netbook / laptop
 @media only screen and (min-width: 1024px)
 {
 	.show-width { width: 1024px; }
 }
-/* HDTV */
+// HDTV
 @media only screen and (min-width: 1080px)
 {
 	.show-width { width: 1080px; }
 }
-/* Bootstrap - desktop */
+// Bootstrap - desktop
 @media only screen and (min-width: 1200px)
 {
 	.show-width { width: 1200px; }
 }
-/* desktop */
+// desktop
 @media only screen and (min-width: 1280px)
 {
 	.show-width { width: 1280px; }
 }
-/* widescreen */
+// widescreen
 @media only screen and (min-width: 1400px)
 { 
 	.show-width { width: 1400px; }
